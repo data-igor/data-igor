@@ -17,11 +17,10 @@ jobs:
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          output_action: file
 
       - name: Achievements
         if: ${{ success() || failure() }}
-        uses: data-igor/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -33,7 +32,7 @@ jobs:
 
       - name: General
         if: ${{ success() || failure() }}
-        uses: data-igor/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
