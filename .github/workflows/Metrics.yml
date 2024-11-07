@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: 🦑 Medias
+      - name: Medias
         if: ${{ success() || failure() }}
         uses: data-igor/metrics@latest
         with:
@@ -17,7 +17,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_order: anilist, music
-          output_action: gist
           committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_anilist: yes
           plugin_anilist_medias: anime
@@ -28,34 +27,19 @@ jobs:
           plugin_music_playlist: ${{ secrets.METRICS_TOKEN }}
           plugin_music_limit: 9
 
-      - name: 🦑 Achievements
+      - name: Achievements
         if: ${{ success() || failure() }}
         uses: data-igor/metrics@latest
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          output_action: gist
           committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_fortune: yes
 
-      - name: 🦑 Sponsors
-        if: ${{ success() || failure() }}
-        uses: data-igor/metrics@latest
-        with:
-          filename: sponsors.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          output_action: gist
-          committer_gist: ${{ secrets.METRICS_TOKEN }}
-          plugin_sponsors: yes
-          plugin_sponsors_past: yes
-          plugin_sponsorships: yes
-          plugin_sponsorships_sections: amount
-
-      - name: 🦑 General
+      - name: General
         if: ${{ success() || failure() }}
         uses: data-igor/metrics@latest
         with:
@@ -64,7 +48,6 @@ jobs:
           base: header
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
-          output_action: gist
           committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_isocalendar: yes
           plugin_languages: yes
@@ -79,14 +62,13 @@ jobs:
           plugin_notable: yes
           plugin_discussions: yes
           
-      - name: 🦑 Splatoon
+      - name: Splatoon
         uses: data-igor/metrics@latest
         if: ${{ success() || failure() }}
         with:
           filename: splatoon.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          output_action: gist
           committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_splatoon: yes
           plugin_splatoon_token: ${{ secrets.METRICS_TOKEN }}
