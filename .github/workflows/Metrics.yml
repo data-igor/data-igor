@@ -1,4 +1,3 @@
-# Original thanks to data-igor https://github.com/lowlighter/lowlighter/blob/master/.github/workflows/metrics.yml
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
@@ -15,18 +14,18 @@ jobs:
         uses: data-igor/metrics@latest
         with:
           filename: medias.svg
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           config_order: anilist, music
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_anilist: yes
           plugin_anilist_medias: anime
           plugin_anilist_sections: favorites, characters
           plugin_anilist_limit: 2
           plugin_anilist_limit_characters: 22
           plugin_music: yes
-          plugin_music_playlist: ${{ secrets.PLAYLIST }}
+          plugin_music_playlist: ${{ secrets.METRICS_TOKEN }}
           plugin_music_limit: 9
 
       - name: 🦑 Achievements
@@ -34,10 +33,10 @@ jobs:
         uses: data-igor/metrics@latest
         with:
           filename: achievements.svg
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_achievements: yes
           plugin_achievements_display: compact
           plugin_fortune: yes
@@ -47,10 +46,10 @@ jobs:
         uses: data-igor/metrics@latest
         with:
           filename: sponsors.svg
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_sponsors: yes
           plugin_sponsors_past: yes
           plugin_sponsorships: yes
@@ -61,12 +60,12 @@ jobs:
         uses: data-igor/metrics@latest
         with:
           filename: general.svg
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: header
           base_indepth: yes
           config_order: base.header, isocalendar, languages, notable, discussions, topics
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_isocalendar: yes
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot, vue, scala, c, c++, python, ejs
@@ -85,14 +84,14 @@ jobs:
         if: ${{ success() || failure() }}
         with:
           filename: splatoon.svg
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           output_action: gist
-          committer_gist: ${{ secrets.GIST }}
+          committer_gist: ${{ secrets.METRICS_TOKEN }}
           plugin_splatoon: yes
-          plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
+          plugin_splatoon_token: ${{ secrets.METRICS_TOKEN }}
           plugin_splatoon_statink: yes
-          plugin_splatoon_statink_token: ${{ secrets.SPLATOON_STATINK_TOKEN }}
+          plugin_splatoon_statink_token: ${{ secrets.METRICS_TOKEN }}
           plugin_splatoon_sections: salmon-run
           plugin_splatoon_salmon_limit: 2
           extras_css: |
