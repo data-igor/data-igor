@@ -1,4 +1,4 @@
-# Original thanks to lowlighter https://github.com/lowlighter/lowlighter/blob/master/.github/workflows/metrics.yml
+# Original thanks to data-igor https://github.com/lowlighter/lowlighter/blob/master/.github/workflows/metrics.yml
 name: Metrics
 on:
   # 🌏 Think about the planet! No need to update stats too frequently
@@ -12,7 +12,7 @@ jobs:
 
       - name: 🦑 Medias
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: data-igor/metrics@latest
         with:
           filename: medias.svg
           token: ${{ secrets.TOKEN }}
@@ -31,7 +31,7 @@ jobs:
 
       - name: 🦑 Achievements
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: data-igor/metrics@latest
         with:
           filename: achievements.svg
           token: ${{ secrets.TOKEN }}
@@ -44,7 +44,7 @@ jobs:
 
       - name: 🦑 Sponsors
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: data-igor/metrics@latest
         with:
           filename: sponsors.svg
           token: ${{ secrets.TOKEN }}
@@ -58,7 +58,7 @@ jobs:
 
       - name: 🦑 General
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: data-igor/metrics@latest
         with:
           filename: general.svg
           token: ${{ secrets.TOKEN }}
@@ -81,7 +81,7 @@ jobs:
           plugin_discussions: yes
           
       - name: 🦑 Splatoon
-        uses: lowlighter/metrics@latest
+        uses: data-igor/metrics@latest
         if: ${{ success() || failure() }}
         with:
           filename: splatoon.svg
