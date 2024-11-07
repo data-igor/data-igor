@@ -12,29 +12,12 @@ jobs:
       - name: Full-year calendar
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
+          filename: ./isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-
-      - name: Medias
-        if: ${{ success() || failure() }}
-        uses: data-igor/metrics@latest
-        with:
-          filename: medias.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          config_order: anilist, music
-          committer_gist: ${{ secrets.METRICS_TOKEN }}
-          plugin_anilist: yes
-          plugin_anilist_medias: anime
-          plugin_anilist_sections: favorites, characters
-          plugin_anilist_limit: 2
-          plugin_anilist_limit_characters: 22
-          plugin_music: yes
-          plugin_music_playlist: ${{ secrets.METRICS_TOKEN }}
-          plugin_music_limit: 9
+          output_action: file
 
       - name: Achievements
         if: ${{ success() || failure() }}
@@ -70,21 +53,4 @@ jobs:
           plugin_topics_mode: icons
           plugin_notable: yes
           plugin_discussions: yes
-          
-      - name: Splatoon
-        uses: data-igor/metrics@latest
-        if: ${{ success() || failure() }}
-        with:
-          filename: splatoon.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          committer_gist: ${{ secrets.METRICS_TOKEN }}
-          plugin_splatoon: yes
-          plugin_splatoon_token: ${{ secrets.METRICS_TOKEN }}
-          plugin_splatoon_statink: yes
-          plugin_splatoon_statink_token: ${{ secrets.METRICS_TOKEN }}
-          plugin_splatoon_sections: salmon-run
-          plugin_splatoon_salmon_limit: 2
-          extras_css: |
-            h2 { display: none !important; }
-            .match:not(:last-child) { padding-bottom: 4px; }
+
