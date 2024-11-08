@@ -4,9 +4,17 @@ on:
   schedule: [{cron: "0 16 * * *"}]
   # 💡 The following line lets you run workflow manually from the action tab!
   workflow_dispatch:
+  # and on each push
+  push: {branches: ["master", "main"]}
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
+      
     steps:
 
       - name: Full-year calendar
