@@ -19,7 +19,7 @@
   <br>
   <strong>BI Content</strong>
   <br>
-  <a href="http://linkedin.com/li/igor-garlowski">LinkedIn</a>
+  <a href="https://uk.linkedin.com/in/igorgarlowski">LinkedIn</a>
 </p>
 <br>
 
