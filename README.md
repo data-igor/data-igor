@@ -33,9 +33,29 @@
   <br>
   <a href="https://public.tableau.com/app/profile/igor.garlowski/vizzes">Tableau Public</a>
 </p>
+<br>
 
-<br><br><br>
+<br><br>
+
+
+<p align="center">
+  <a href="https://garlowski.com/">
+    <img width="25" alt="Garlowski" src="https://avatars.githubusercontent.com/u/109594025?v=4">
+  </a>
+  <br>
+  <strong>Contracts & Speaking opportunities</strong>
+  <br>
+  <a href="https://garlowski.com/">Garlowski.com</a>
+</p>
+<br>
+
+<br><br>
+
+
 [<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/isocalendar.svg">](#)
+<br><br>
 [<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/achievements.svg">](#)
+<br><br><br>
+
 
 
