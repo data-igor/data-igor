@@ -43,7 +43,7 @@
     <img width="25" alt="Garlowski" src="https://avatars.githubusercontent.com/u/109594025?v=4">
   </a>
   <br>
-  <strong>Contracts & Speaking Requests</strong>
+  <strong>Contracts & Speaking<br>Requests</strong>
   <br>
   <a href="https://garlowski.com/">Garlowski.com</a>
 </p>
