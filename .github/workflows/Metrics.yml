@@ -28,7 +28,7 @@ jobs:
 
       - name: Achievements
         if: ${{ success() || failure() }}
-        uses: yobson1/metrics/commit/b99f7cd27980d0761a668ecc8f1c08f0fa57df15
+        uses: yobson1/metrics@b99f7cd27980d0761a668ecc8f1c08f0fa57df15
         with:
           filename: achievements.svg
           token: ${{ secrets.METRICS_TOKEN }}
