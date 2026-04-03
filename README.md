@@ -1,4 +1,4 @@
-[<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/github-metrics.svg?short_path=b18f250">](#)
+[<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/general.svg">](#)
 
 <p align="center">
   <a href="https://DataDune.io">
