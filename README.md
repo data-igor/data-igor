@@ -1,6 +1,4 @@
-<table>
-<tr>
-<td valign="top" width="50%">
+[<img align="right" width="450" alt="GitHub Metrics" src="https://github.com/data-igor/data-igor/blob/main/general.svg">](#)
 
 <p align="center">
   <a href="https://DataDune.io">
@@ -14,7 +12,7 @@
 <br>
 
 <p align="center">
-  <a href="http://linkedin.com/li/igor-garlowski">
+  <a href="https://uk.linkedin.com/in/igorgarlowski">
     <img width="25" alt="LinkedIn" src="https://www.linkedin.com/favicon.ico">
   </a>
   <br>
@@ -44,23 +42,4 @@
   <br>
   <a href="https://garlowski.com/">Garlowski.com</a>
 </p>
-
-</td>
-<td valign="top" width="50%">
-
-<a href="#">
-  <img width="450" alt="GitHub Metrics" src="https://github.com/data-igor/data-igor/blob/main/general.svg">
-</a>
-<br>
-<a href="#">
-  <img width="450" alt="Contribution Calendar" src="https://github.com/data-igor/data-igor/blob/main/isocalendar.svg">
-</a>
-<br>
-<a href="#">
-  <img width="450" alt="Achievements" src="https://github.com/data-igor/data-igor/blob/main/achievements.svg">
-</a>
-
-</td>
-</tr>
-</table>
 
