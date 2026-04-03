@@ -17,32 +17,17 @@ jobs:
       
     steps:
 
-      - name: Full-year calendar
-        uses: lowlighter/metrics@latest
-        with:
-          filename: isocalendar.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-      - name: Achievements
-        if: ${{ success() || failure() }}
-        uses: yobson1/metrics@b99f7cd27980d0761a668ecc8f1c08f0fa57df15
-        with:
-          filename: achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-
       - name: General
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: yobson1/metrics@b99f7cd27980d0761a668ecc8f1c08f0fa57df15
         with:
           filename: general.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: header
           base_indepth: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          config_order: base.header, isocalendar, achievements
           committer_gist: ${{ secrets.METRICS_TOKEN }}
 
