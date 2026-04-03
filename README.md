@@ -1,4 +1,6 @@
-[<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/general.svg">](#)
+<table>
+<tr>
+<td valign="top" width="50%">
 
 <p align="center">
   <a href="https://DataDune.io">
@@ -11,7 +13,6 @@
 </p>
 <br>
 
-
 <p align="center">
   <a href="http://linkedin.com/li/igor-garlowski">
     <img width="25" alt="LinkedIn" src="https://www.linkedin.com/favicon.ico">
@@ -22,7 +23,6 @@
   <a href="https://uk.linkedin.com/in/igorgarlowski">LinkedIn</a>
 </p>
 <br>
-
 
 <p align="center">
   <a href="https://public.tableau.com/app/profile/igor.garlowski/vizzes">
@@ -35,9 +35,6 @@
 </p>
 <br>
 
-<br><br>
-
-
 <p align="center">
   <a href="https://garlowski.com/">
     <img width="25" alt="Garlowski" src="https://avatars.githubusercontent.com/u/109594025?v=4">
@@ -47,15 +44,23 @@
   <br>
   <a href="https://garlowski.com/">Garlowski.com</a>
 </p>
+
+</td>
+<td valign="top" width="50%">
+
+<a href="#">
+  <img width="450" alt="GitHub Metrics" src="https://github.com/data-igor/data-igor/blob/main/general.svg">
+</a>
 <br>
+<a href="#">
+  <img width="450" alt="Contribution Calendar" src="https://github.com/data-igor/data-igor/blob/main/isocalendar.svg">
+</a>
+<br>
+<a href="#">
+  <img width="450" alt="Achievements" src="https://github.com/data-igor/data-igor/blob/main/achievements.svg">
+</a>
 
-<br><br>
-
-
-[<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/isocalendar.svg">](#)
-<br><br>
-[<img align="right" width="450" alt="" src="https://github.com/data-igor/data-igor/blob/main/achievements.svg">](#)
-<br><br><br>
-
-
+</td>
+</tr>
+</table>
 
