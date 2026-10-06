@@ -2,8 +2,7 @@
 
 <p align="center">
   <a href="https://DataDune.io">
-    <img width="25" alt="Data Dune" src="https://datadune.io/wp-content/uploads/2022/09/Logo-circle-150x150-1-150x150.png">
-  </a>
+    <img width="25" alt="Data Dune" src="https://avatars.githubusercontent.com/u/145431373?s=200&v=4">
   <br>
   <strong>BI Consulting</strong>
   <br>
